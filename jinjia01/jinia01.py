@@ -16,6 +16,7 @@ def page2(name,age):
 	data = {"name":name, "age":age}
 	return render_template("page2.html", data = data)
 
+
 if __name__ == "__main__":
 	host = ["192.168.209.128",]
-	app.run(host[0], port=5000,debug=True)
+	app.run(host[0], port=8000,debug=True)
