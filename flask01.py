@@ -6,6 +6,9 @@ app = Flask("__main__")
 def home():
 	return "Welcome to Flask"
 
+@ap.route("/name")
+def user(name)
+	return "Welcome to Flask",name
 
 if __name__ == "__main__":
 	hosts = ["192.168.209.128"]
