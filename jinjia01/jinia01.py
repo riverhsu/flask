@@ -5,10 +5,12 @@ app = Flask(__name__)
 
 @app.route("/")
 def home():
+	# show layout.html only
 	return render_template("index.html")
 
 @app.route("/page1/<name>")
 def page1(name):
+	# show username in page
 	return render_template("page1.html", name = name)
 
 @app.route("/page2/<name>/<age>")
