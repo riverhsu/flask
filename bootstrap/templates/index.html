@@ -15,3 +15,13 @@
 		<button type="submit" class="btn btn-primary">Submit</button>
 	</form>
 {% endblock %}
+
+{% block alertmsg %}
+<div>
+	alert popup
+{% from "macro.html" import alert_box %}
+
+{{ alert_box("This is an info message.", "info") }}
+{{ alert_box("This is a warning message.", "warning") }}
+</div>
+{% endblock %}
