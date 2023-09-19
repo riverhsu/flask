@@ -1,0 +1,17 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Flask Bootstrap 4 Example</title>
+	{{bootstrap.load_css()}}
+	{{bootstrap.load_js()}}
+</head>
+<body>
+	<div class="container">
+		<h1>Welcome to Flask with Bootstrap 4</h1>
+		{% block content %} {% endblock %}
+
+	</div>
+	
+</body>
+</html>
