@@ -1,7 +1,10 @@
 from flask import Flask
 from views.bpview import bpview
+from flask_bootstrap import Bootstrap4
 
 app = Flask(__name__)
+
+bp4 = Bootstrap4(app)
 
 app.register_blueprint(bpview)
 

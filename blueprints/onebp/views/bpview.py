@@ -9,4 +9,4 @@ def dphome():
 
 @bpview.route("/login")
 def dploing():
-	return "Blueprint login page"
+	return render_template("auth/login.html")
