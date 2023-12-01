@@ -1,0 +1,7 @@
+{% extends "layout.html" %}
+
+{% block content %}
+	{% for key, val in data.items() %}
+		<span> {{key}}</span> {{val}} </br>
+	{% endfor %}
+{% endblock %}
