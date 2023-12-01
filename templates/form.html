@@ -1,0 +1,30 @@
+{% extends "index.html" %}
+
+{% macro upper(text) %}
+    
+{% endmacro %}
+
+{% block form1 %}
+    <form action="/submitform1" method="post">
+        <input type="text" name="name" />
+        <input type="password" name="password" />
+        <input type="submit" value="提交" />
+    </form>
+{% endblock %}
+
+{% block form2 %}
+	<p> data 1</p>
+	<ul>
+		{% for item in items.data1 %}
+			<li>{{ item | capitalize  }} </li>
+		{% endfor %}
+	</ul>
+	<p>data 2</p>
+    <ul>
+        {% for item in items.data2 %}
+            {% if item.is_active %}
+                <li>{{ item }}</li>
+            {% endif %}
+        {% endfor %}
+    </ul>
+{% endblock %}
